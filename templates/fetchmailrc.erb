@@ -1,3 +1,3 @@
-poll contactmusic.org with proto IMAP
-  user 'newsfeedfromwenn@contactmusic.org' there with password 's5u0ZlCW8b6QZKANl20OPwzV' is newsfeedfromwenn here options ssl
-  mda "/usr/bin/procmail -m /root/procmail_newsfeedfromwenn_rc"
+poll <%= mail_server %> with proto <%= mail_protocol %>
+  user '<%= mail_user %>' there with password '<%= mail_user_passwd %>' is <%= name %> here options ssl
+  mda "/usr/bin/procmail -m <%= procmail_rc %>"
