@@ -1,4 +1,4 @@
-# puppeet-fetchmail
+# puppet-fetchmail
 
 ####Table of Contents
 1. [License](#license)
@@ -16,13 +16,13 @@
 * 
 
 ## Usage
-### fetchamil
-It only install fetchamil from default distribution repositories.
+### fetchmail
+It only install fetchmail from default distribution repositories.
 
 `include fetchmail`
 
-### fetchamil::conf
-Configures fetchamil by creating ~/.fetchmailrc file for user given as a name.
+### fetchmail::conf
+Configures fetchmail by creating ~/.fetchmailrc file for user given as a name.
 ```
 fetchmail::conf{'root':}
 ```
