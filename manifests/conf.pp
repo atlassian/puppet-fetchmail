@@ -14,10 +14,11 @@ define fetchmail::conf(
   $mail_user_passwd,
   $procmail_rc,
   $mail_protocol = 'IMAP',
+  $path = "/home/${name}/"
 ){
-  file{"/home/$name/.fetchmailrc":
+  file{"${path}/.fetchmailrc":
     ensure => 'present',
-    owner  => 'root',
+    owner  => "${name}",
     group  => 'root',
     mode   => '0644',
     content=> template('fetchmail/fetchmailrc.erb');
