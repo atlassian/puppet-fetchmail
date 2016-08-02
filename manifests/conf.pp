@@ -20,7 +20,7 @@ define fetchmail::conf(
     ensure => 'present',
     owner  => "${name}",
     group  => 'root',
-    mode   => '0644',
+    mode   => '0600',
     content=> template('fetchmail/fetchmailrc.erb');
   }
 }
