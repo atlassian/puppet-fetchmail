@@ -1,6 +1,10 @@
-# Install fetchmail
+# == Class fetchmail::install
+#
+# This class is called from fetchmail for install.
+#
 class fetchmail::install {
-  package {'fetchmail':
-    ensure  => installed,
+
+  package { $::fetchmail::package_name:
+    ensure => present,
   }
 }

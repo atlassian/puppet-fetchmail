@@ -1,0 +1,33 @@
+{
+  "name": "atlassian-fetchmail",
+  "version": "0.1.0",
+  "author": "atlassian",
+  "summary": "Fetchmail configuration",
+  "license": "Apache-2.0",
+  "source": "https://github.com/atlassian/puppet-fetchmail",
+  "project_page": "https://github.com/atlassian/puppet-fetchmail",
+  "issues_url": "https://github.com/atlassian/puppet-fetchmail/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 1.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    }
+  ]
+}

@@ -1,3 +1,3 @@
-poll <%= mail_server %> with proto <%= mail_protocol %>
-  user '<%= mail_user %>' there with password '<%= mail_user_passwd %>' is <%= name %> here options ssl
-  mda "/usr/bin/procmail -m <%= procmail_rc %>"
+poll <%= @mail_server %> with proto <%= @mail_protocol %>
+  user '<%= @mail_user %>' there with password '<%= @mail_user_passwd %>' is <%= @name %> here options ssl
+  mda "/usr/bin/procmail -m <%= @procmail_rc %>"
